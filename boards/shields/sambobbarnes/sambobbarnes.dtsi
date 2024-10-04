@@ -55,11 +55,11 @@ kscan0: kscan {
         compatible = "solomon,ssd1306fb";
         reg = <0x3c>;
         width = <128>;
-        height = <32>;//TODO: change me
+        height = <64>;//TODO: change me
         segment-offset = <0>;
         page-offset = <0>;
         display-offset = <0>;
-        multiplex-ratio = <31>;//TODO: change me
+        multiplex-ratio = <63>;//TODO: change me
         segment-remap;
         com-invdir;
         com-sequential;
