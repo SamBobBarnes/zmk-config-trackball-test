@@ -1,6 +1,6 @@
 file_format: "1"
-id: sambobbarnes
-name: SamBobBarnes
+id: corne2
+name: Corne2
 type: shield
 url: https://github.com/foostan/crkbd/
 requires: [pro_micro]
@@ -10,5 +10,5 @@ features:
   - display
   - underglow
 siblings:
-  - sambobbarnes_left
-  - sambobbarnes_right
+  - corne2_left
+  - corne2_right

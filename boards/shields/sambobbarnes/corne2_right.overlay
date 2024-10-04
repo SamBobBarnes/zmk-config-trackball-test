@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "sambobbarnes.dtsi"
+#include "corne2.dtsi"
 
 &default_transform {
     col-offset = <6>;
