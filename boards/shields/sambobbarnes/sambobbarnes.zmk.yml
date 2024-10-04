@@ -2,13 +2,12 @@ file_format: "1"
 id: sambobbarnes
 name: SamBobBarnes
 type: shield
-url: https://github.com/foostan/crkbd/
+url: https://github.com/sambobbarnes/zmk-config/\s
 requires: [pro_micro]
 exposes: [i2c_oled]
 features:
   - keys
   - display
-  - underglow
 siblings:
   - sambobbarnes_left
   - sambobbarnes_right
