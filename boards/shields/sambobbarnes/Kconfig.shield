@@ -1,0 +1,5 @@
+config SHIELD_SAMBOBBARNES_LEFT
+    def_bool $(shields_list_contains,sambobbarnes_left)
+
+config SHIELD_SAMBOBBARNES_RIGHT
+    def_bool $(shields_list_contains,sambobbarnes_right)
