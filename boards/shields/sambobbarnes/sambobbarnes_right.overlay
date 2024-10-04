@@ -1,4 +1,4 @@
-#include "sambobbarnes_v2.dtsi" // The shared dtsi file is included in the overlay
+#include "sambobbarnes.dtsi" // The shared dtsi file is included in the overlay
 
 // Label of the kscan node in the dtsi
 &kscan0 {
