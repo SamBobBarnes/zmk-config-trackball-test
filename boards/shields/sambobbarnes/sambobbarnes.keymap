@@ -89,7 +89,7 @@
                                &kp Z       &kp N1      &kp N2     &kp N3      &kp N4      &kp N5      &none          &none        &none       &none       &none       &none       &none       &none
                   &none       &kp TAB      &kp Q       &kp W      &kp E       &kp R       &kp T       &kp V          &none        &none       &none       &none       &none       &none       &none       &none
                   &none       &kp ESC      &kp A       &kp S      &kp D       &kp F       &kp G                                   &none       &none       &none       &none       &none       &none       &to 3
-                             &kp LSHFT     &kp Z       &kp Xc      &kp C       &none       &none                                   &none       &none       &none       &none       &none       &none
+                             &kp LSHFT     &kp Z       &kp X      &kp C       &none       &none                                   &none       &none       &none       &none       &none       &none
                              &kp LCTRL     &none       &none     &kp LALT     &kp C     &kp SPACE     &kp B          &kp M        &none       &none       &none       &none       &none       &none
             >;
             display-name = "War Thunder";
