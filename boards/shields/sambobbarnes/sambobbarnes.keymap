@@ -39,7 +39,7 @@
                    &none       &trans      &trans      &trans     &trans      &trans      &trans      &trans         &trans       &trans      &trans      &trans      &trans      &trans      &kp F12     &kp K_VOL_UP
                    &none       &trans      &trans      &trans     &trans      &trans     &kp LC(H)                                &trans      &trans      &trans      &trans      &trans      &trans      &kp K_VOL_DN
                                &trans      &trans      &trans     &trans      &trans      &trans                                  &trans      &trans      &trans      &trans      &trans      &trans
-                             &bt BT_NXT    &trans      &trans     &trans    &kp K_CMENU &kp LA(LSHFT) &none          &trans       &trans     &kp K_APP    &trans      &trans      &trans      &trans
+                             &bt BT_NXT    &trans      &trans &bt BT_CLR_ALL  &kp K_CMENU &kp LA(LSHFT) &none          &trans       &trans     &kp K_APP    &trans      &trans      &trans      &trans
             >;
             display-name = "F-Row";
         };
