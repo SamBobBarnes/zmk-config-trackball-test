@@ -8,7 +8,7 @@
 </head>
 <style>
     body {
-        font-family: "Fira Code", monospace;
+        font-family: "Fira Code", SansSerif , monospace;
         /*background-color: #000000;*/
         background-color: #ffffff;
         /*color: #ffffff;*/
@@ -103,13 +103,51 @@
     .bottom-space {
         /*margin-bottom: 10px;*/
     }
+
+    .key {
+        border: black solid 1px;
+        border-radius: .3rem;
+        font-size: 5mm;
+        position: absolute;
+    }
+
+    .u1 {
+        width: 11mm;
+        height: 11mm;
+    }
+
+    .u1_25{
+        width: 13.75mm;
+        height: 11mm;
+    }
+
+    .u1_25v{
+        height: 13.75mm;
+        width: 11mm;
+    }
+
+    .u1_5 {
+        width: 11mm;
+        height: 16.5mm;
+    }
+
+    .abs {
+        position: absolute;
+    }
+
+    .main {
+        position: absolute;
+        font-size: 1rem;
+        left: 1mm;
+        top: 0;
+    }
 </style>
 <body>
 <h1>Main Keys</h1>
 <div class="main-color row">
     <h2>34pt</h2>
     <div class="size-xxxl">
-        &#x21d0; &#x21d1; &#x21d2; &#x21d3; &#8998; &#8998; <span class="special-color">&#x2318;</span>
+        &#x21d0; &#x21d1; &#x21d2; &#x21d3; &#8998; &#9003; <span class="special-color">&#x2318;</span>
     </div>
     <h2>26pt</h2>
     <div class="size-xl">
@@ -118,7 +156,7 @@
     <h2>22pt</h2>
     <div class="size-lg">
         A S D F G Z X C V B Q W E R T Y U O I P H J L N M 1 2 3 4 5 6 7 8 9 0 [ ] - = &#x0027; <span
-        class="shift-color">&#x0022; { } _ + ~</span>
+            class="shift-color">&#x0022; { } _ + ~</span>
     </div>
     <h2>18pt</h2>
     <div class="size-sm bottom-space">/ * \ <span class="shift-color">? < > | ! @ # $ % ^ & * ( )</span></div>
@@ -208,8 +246,8 @@ M 4.2079,2.47813 L 4.40672,2.41354 L 4.58778,2.30901 L 4.74313,2.16913 L 4.86601
     </div>
     <h2>Spelled out</h2>
     <div><span class="size-md">Esc</span> <span class="size-xs special-color">Ctrl</span> <span
-        class="size-xs">Alt</span> <span class="size-xs special-color">Alt</span> <span
-        class="size-xxxl">&#x2325;</span> <span class="size-xxxl special-color">&#x2325;</span></div>
+            class="size-xs">Alt</span> <span class="size-xs special-color">Alt</span> <span
+            class="size-xxxl">&#x2325;</span> <span class="size-xxxl special-color">&#x2325;</span></div>
 </div>
 <h1>Symbol Layer</h1>
 <div class="row">
@@ -390,5 +428,247 @@ M -1.78729,5.66811 L -1.60724,5.55687 L -1.50914,5.36934 L -1.5,5.2843 L -1.5,4 
 </div>
 <h1>Onshape Layer</h1>
 <div></div>
+<h1>Keys</h1>
+<div style="width: 210mm; height:80mm; border: black solid 2px; padding: 1rem; position: relative">
+    <!--    Left    -->
+    <div class="key u1_25v" style="top: 24mm; left: 2mm">
+        <span class="main symbol-color" >FN</span>
+    </div>
+    <div class="key u1_25v" style="top: 40mm; left: 2mm">
+        <span class="main special-color" >CL</span>
+    </div>
+    <div class="key u1_25" style="top: 10mm; left: 15mm">
+        <span class="main">` ~</span>
+    </div>
+    <div class="key u1_25" style="top: 23mm; left: 15mm">
+        <span class="main" style="top:.5mm">
+            <svg width="12mm" height="10mm" viewBox="-6 -5 12 10" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <title>OpenSCAD Model</title>
+            <path d="
+M -1.40399,-0.315567 L -1.32567,-0.413162 L -1.22644,-0.586823 L -1.17612,-0.828857 L -1.27768,-1.05424 L -1.37529,-1.13257
+ L -2.89328,-2 L 4.87605,-2 L 5.11118,-2.07639 L 5.25648,-2.27638 L 5.27606,-2.39999 L 5.27606,-2.59999
+ L 5.19966,-2.83511 L 4.99966,-2.98041 L 4.87605,-3 L -2.89328,-3 L -1.37529,-3.86742 L -1.20905,-4.0504
+ L -1.18211,-4.29613 L -1.22644,-4.41316 L -1.32567,-4.58682 L -1.50865,-4.75305 L -1.75439,-4.77998 L -1.87143,-4.73566
+ L -4.27606,-3.36159 L -4.27606,-4.09999 L -4.35245,-4.33511 L -4.55246,-4.48041 L -4.67606,-4.5 L -4.87605,-4.5
+ L -5.11118,-4.4236 L -5.25648,-4.2236 L -5.27606,-4.09999 L -5.27606,-0.899994 L -5.19966,-0.664871 L -4.99966,-0.519577
+ L -4.87605,-0.5 L -4.67606,-0.5 L -4.44095,-0.576385 L -4.29564,-0.776382 L -4.27606,-0.899994 L -4.27606,-1.6384
+ L -1.87143,-0.264328 L -1.62939,-0.214005 z
+M 1.87143,4.73566 L 4.27606,3.36159 L 4.27606,4.09999 L 4.35245,4.33511 L 4.55246,4.48041 L 4.67606,4.5
+ L 4.87605,4.5 L 5.11118,4.4236 L 5.25648,4.2236 L 5.27606,4.09999 L 5.27606,0.899994 L 5.19966,0.664871
+ L 4.99966,0.519577 L 4.87605,0.5 L 4.67606,0.5 L 4.44095,0.576385 L 4.29564,0.776382 L 4.27606,0.899994
+ L 4.27606,1.6384 L 1.87143,0.264328 L 1.62939,0.214005 L 1.40399,0.315567 L 1.32567,0.413162 L 1.22644,0.586823
+ L 1.17612,0.828857 L 1.27768,1.05424 L 1.37529,1.13257 L 2.89328,2 L -4.87605,2 L -5.11118,2.07639
+ L -5.25648,2.27638 L -5.27606,2.39999 L -5.27606,2.59999 L -5.19966,2.83511 L -4.99966,2.98041 L -4.87605,3
+ L 2.89328,3 L 1.37529,3.86742 L 1.20905,4.0504 L 1.18211,4.29613 L 1.22644,4.41316 L 1.32567,4.58682
+ L 1.50865,4.75305 L 1.75439,4.77998 z
+"/>
+        </svg>
+        </span>
+    </div>
+    <div class="key u1_25" style="top: 36mm; left: 15mm">
+        <span class="main">Esc</span>
+    </div>
+    <div class="key u1_25" style="top: 49mm; left: 15mm">
+        <span class="main shift-color" style="left: 2mm;">
+            <svg width="10mm" height="10mm" viewBox="-5 -6 10 11" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <title>OpenSCAD Model</title>
+            <path d="
+M 1.83511,3.4236 L 1.98041,3.2236 L 2,3.09999 L 2,-0.5 L 4.0343,-0.5 L 4.23842,-0.555984
+ L 4.38538,-0.708298 L 4.43405,-0.914276 L 4.3708,-1.11624 L 4.31715,-1.18283 L 0.282837,-5.21715 L 0.062561,-5.32938
+ L -0.181595,-5.29071 L -0.282837,-5.21715 L -4.31715,-1.18283 L -4.42188,-0.998917 L -4.41811,-0.787292 L -4.30687,-0.607239
+ L -4.11934,-0.50914 L -4.0343,-0.5 L -2,-0.5 L -2,3.09999 L -1.9236,3.33511 L -1.7236,3.48041
+ L -1.59999,3.5 L 1.59999,3.5 z
+M 3.83511,4.9236 L 3.98041,4.7236 L 4,4.59999 L 4,4.39999 L 3.9236,4.16487 L 3.7236,4.01958
+ L 3.59999,4 L -3.59999,4 L -3.83511,4.07639 L -3.98041,4.27638 L -4,4.39999 L -4,4.59999
+ L -3.9236,4.83511 L -3.7236,4.98041 L -3.59999,5 L 3.59999,5 z
+"/>
+        </svg>
+        </span>
+    </div>
+    <div class="key u1" style="top: 62mm; left: 18mm">
+        <span class="abs special-color" style="font-size: 10mm; left: 2.3mm; top: -0.5mm">&#x2318;</span>
+    </div>
+    <div class="key u1" style="top: 10mm; left: 31mm">
+        <span class="main">1</span>
+    </div>
+    <div class="key u1" style="top: 23mm; left: 31mm">
+        <span class="main">Q</span>
+    </div>
+    <div class="key u1" style="top: 36mm; left: 31mm">
+        <span class="main">A</span>
+    </div>
+    <div class="key u1" style="top: 49mm; left: 31mm">
+        <span class="main">Z</span>
+    </div>
+    <div class="key u1" style="top: 62mm; left: 31mm"></div>
+    <div class="key u1" style="top: 8mm; left: 44mm">
+        <span class="main">2</span>
+    </div>
+    <div class="key u1" style="top: 21mm; left: 44mm">
+        <span class="main">W</span>
+    </div>
+    <div class="key u1" style="top: 34mm; left: 44mm">
+        <span class="main">S</span>
+    </div>
+    <div class="key u1" style="top: 47mm; left: 44mm">
+        <span class="main">X</span>
+    </div>
+    <div class="key u1" style="top: 60mm; left: 44mm"></div>
+    <div class="key u1" style="top: 6mm;  left: 57mm">
+        <span class="main">3</span>
+    </div>
+    <div class="key u1" style="top: 19mm; left: 57mm">
+        <span class="main">E</span>
+    </div>
+    <div class="key u1" style="top: 32mm; left: 57mm">
+        <span class="main">D</span>
+    </div>
+    <div class="key u1" style="top: 45mm; left: 57mm">
+        <span class="main">C</span>
+    </div>
+    <div class="key u1" style="top: 58mm; left: 57mm"></div>
+    <div class="key u1" style="top: 8mm;  left: 70mm">
+        <span class="main">4<span>
+    </div>
+    <div class="key u1" style="top: 21mm; left: 70mm">
+        <span class="main">R</span>
+    </div>
+    <div class="key u1" style="top: 34mm; left: 70mm">
+        <span class="main">F</span>
+    </div>
+    <div class="key u1" style="top: 47mm; left: 70mm">
+        <span class="main">V</span>
+    </div>
+    <div class="key u1" style="top: 10mm;  left: 83mm">
+        <span class="main">5</span>
+    </div>
+    <div class="key u1" style="top: 23mm; left: 83mm">
+        <span class="main">T</span>
+    </div>
+    <div class="key u1" style="top: 36mm; left: 83mm">
+        <span class="main">G</span>
+    </div>
+    <div class="key u1" style="top: 49mm; left: 83mm">
+        <span class="main">B</span>
+    </div>
+    <div class="key u1" style="top: 16mm;  left: 96mm"></div>
+    <div class="key u1_5" style="top: 29mm;  left: 96mm"></div>
+    <div class="key u1_25" style="top: 62mm;  left: 75mm"></div>
+    <div class="key u1_5" style="top: 50mm;  left: 96mm">
+        <span class="main" style="font-size: 10mm; left: 2mm; top: -1mm">&#8998;</span>
+    </div>
+    <div class="key u1_5" style="top: 68mm;  left: 96mm">
+        <span class="main" style="font-size: 10mm; left: 2.5mm; top: -1mm">&#9003;</span>
+    </div>
+
+    <!--    Right    -->
+    <div class="key u1_25v" style="top: 24mm; right:2mm"></div>
+    <div class="key u1_25v" style="top: 40mm; right:2mm"></div>
+    <div class="key u1_25" style="top: 10mm; right: 15mm"></div>
+    <div class="key u1_25" style="top: 23mm; right: 15mm"></div>
+    <div class="key u1_25" style="top: 36mm; right: 15mm"></div>
+    <div class="key u1_25" style="top: 49mm; right: 15mm">
+        <span class="text main shift-color" style="left: 2mm;">
+            <svg width="10mm" height="10mm" viewBox="-5 -6 10 11" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <title>OpenSCAD Model</title>
+            <path d="
+M 1.83511,3.4236 L 1.98041,3.2236 L 2,3.09999 L 2,-0.5 L 4.0343,-0.5 L 4.23842,-0.555984
+ L 4.38538,-0.708298 L 4.43405,-0.914276 L 4.3708,-1.11624 L 4.31715,-1.18283 L 0.282837,-5.21715 L 0.062561,-5.32938
+ L -0.181595,-5.29071 L -0.282837,-5.21715 L -4.31715,-1.18283 L -4.42188,-0.998917 L -4.41811,-0.787292 L -4.30687,-0.607239
+ L -4.11934,-0.50914 L -4.0343,-0.5 L -2,-0.5 L -2,3.09999 L -1.9236,3.33511 L -1.7236,3.48041
+ L -1.59999,3.5 L 1.59999,3.5 z
+M 3.83511,4.9236 L 3.98041,4.7236 L 4,4.59999 L 4,4.39999 L 3.9236,4.16487 L 3.7236,4.01958
+ L 3.59999,4 L -3.59999,4 L -3.83511,4.07639 L -3.98041,4.27638 L -4,4.39999 L -4,4.59999
+ L -3.9236,4.83511 L -3.7236,4.98041 L -3.59999,5 L 3.59999,5 z
+"/>
+        </svg>
+        </span>
+    </div>
+    <div class="key u1" style="top: 62mm; right: 18mm"></div>
+    <div class="key u1" style="top: 10mm; right: 31mm">
+        <span class="main">0</span>
+    </div>
+    <div class="key u1" style="top: 23mm; right: 31mm">
+        <span class="main">P</span>
+    </div>
+    <div class="key u1" style="top: 36mm; right: 31mm">
+        <span class="main">; <span class="shift-color">:</span></span>
+    </div>
+    <div class="key u1" style="top: 49mm; right: 31mm">
+        <span class="main">/ <span class="shift-color">?</span></span>
+    </div>
+    <div class="key u1" style="top: 62mm; right: 31mm"></div>
+    <div class="key u1" style="top: 8mm; right: 44mm">
+        <span class="main">9</span>
+    </div>
+    <div class="key u1" style="top: 21mm; right: 44mm">
+        <span class="main">O</span>
+    </div>
+    <div class="key u1" style="top: 34mm; right: 44mm">
+        <span class="main">L</span>
+    </div>
+    <div class="key u1" style="top: 47mm; right: 44mm">
+        <span class="main">. <span class="shift-color">&gt;</span></span>
+    </div>
+    <div class="key u1" style="top: 60mm; right: 44mm"></div>
+    <div class="key u1" style="top: 6mm;  right: 57mm">
+        <span class="main">8</span>
+    </div>
+    <div class="key u1" style="top: 19mm; right: 57mm">
+        <span class="main">I</span>
+    </div>
+    <div class="key u1" style="top: 32mm; right: 57mm">
+        <span class="main">K</span>
+    </div>
+    <div class="key u1" style="top: 45mm; right: 57mm">
+        <span class="main">, <span class="shift-color">&lt;</span></span>
+    </div>
+    <div class="key u1" style="top: 58mm; right: 57mm"></div>
+    <div class="key u1" style="top: 8mm;  right: 70mm">
+        <span class="main">7</span>
+    </div>
+    <div class="key u1" style="top: 21mm; right: 70mm">
+        <span class="main">U</span>
+    </div>
+    <div class="key u1" style="top: 34mm; right: 70mm">
+        <span class="main">J</span>
+    </div>
+    <div class="key u1" style="top: 47mm; right: 70mm">
+        <span class="main">M</span>
+    </div>
+    <div class="key u1" style="top: 10mm;  right: 83mm">
+        <span class="main">6</span>
+    </div>
+    <div class="key u1" style="top: 23mm; right: 83mm">
+        <span class="main">Y</span>
+    </div>
+    <div class="key u1" style="top: 36mm; right: 83mm">
+        <span class="main">H</span>
+    </div>
+    <div class="key u1" style="top: 49mm; right: 83mm">
+        <span class="main">N</span>
+    </div>
+    <div class="key u1" style="top: 16mm;  right: 96mm"></div>
+    <div class="key u1_5" style="top: 29mm;  right: 96mm"></div>
+    <div class="key u1_25" style="top: 62mm;  right: 75mm">
+        <span class="abs space-color" style="left: 1.7mm; top: 2mm">
+            <svg width="10mm" height="3mm" viewBox="-5 0 10 3" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <title>OpenSCAD Model</title>
+            <path d="
+M 4.2079,2.47813 L 4.40672,2.41354 L 4.58778,2.30901 L 4.74313,2.16913 L 4.86601,2 L 4.95105,1.80901
+ L 4.99451,1.60452 L 5,1.5 L 5,0.899994 L 4.9236,0.664871 L 4.7236,0.519577 L 4.59999,0.5
+ L 3.89999,0.5 L 3.66487,0.576385 L 3.51958,0.776382 L 3.5,0.899994 L 3.5,1.09999 L 3.48041,1.2236
+ L 3.33511,1.4236 L 3.09999,1.5 L -3.09999,1.5 L -3.2236,1.48041 L -3.4236,1.33511 L -3.5,1.09999
+ L -3.5,0.899994 L -3.57639,0.664871 L -3.77638,0.519577 L -3.89999,0.5 L -4.59999,0.5 L -4.83511,0.576385
+ L -4.98041,0.776382 L -5,0.899994 L -5,1.5 L -4.97813,1.7079 L -4.91354,1.90672 L -4.80901,2.08778
+ L -4.66913,2.24313 L -4.5,2.36601 L -4.30901,2.45105 L -4.10452,2.49451 L -4,2.5 L 4,2.5
+ z
+"/>
+        </svg>
+        </span>
+    </div>
+    <div class="key u1_5" style="top: 50mm;  right: 96mm"></div>
+    <div class="key u1_5" style="top: 68mm;  right: 96mm"></div>
+</div>
 </body>
 </html>
