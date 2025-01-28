@@ -1,4 +1,9 @@
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    paths-ignore:
+      - 'visuals/**'
+  workflow_dispatch:
+  pull_request:
 
 jobs:
   build:
