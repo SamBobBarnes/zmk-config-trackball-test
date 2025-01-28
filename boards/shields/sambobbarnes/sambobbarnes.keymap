@@ -123,7 +123,7 @@
                              &kp LS(F6)    &none       &none      &none       &none       &none       &none          &none        &none       &none       &none       &none       &none  &kp LC(LS(MINUS))
                   &none        &none       &none       &none      &none  &kp LC(LA(LS(T))) &none      &none          &none        &none       &none       &none       &none       &none  &kp LC(LS(EQUAL)) &none
                   &none        &none       &none   &kp LC(LA(S))  &none       &none       &none                                   &none       &none       &none   &kp LC(LA(L))   &none       &none        &none
-                               &none       &none       &none      &none    &kp LC(LA(v))  &kp LC(F8)                                &none   &kp LC(LA(M))   &none       &none       &none       &none
+                               &none       &none       &none      &none    &kp LC(LA(V))  &kp LC(F8)                              &none   &kp LC(LA(M))   &none       &none       &none       &none
                                &none       &none       &none      &none       &none       &none       &none          &none        &none       &none       &none       &none       &none       &none
             >;
             display-name = "JetBrains";
