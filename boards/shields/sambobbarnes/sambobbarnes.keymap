@@ -19,7 +19,7 @@
             //             |____win____|_____+_____|_____-_____|___*/alt___|___\/ctl___|____bsp____|____del____||||____alt____|____ent____|____spc____|____HOME___|_____PU____|_____PD____|____END____|
             bindings = <
                              &kp GRAVE     &kp N1      &kp N2     &kp N3      &kp N4      &kp N5      &none          &none        &kp N6      &kp N7     &kp N8       &kp N9      &kp N0    &kp MINUS
-                   &mo 1  &mt LA(TAB) TAB  &kp Q       &kp W      &kp E       &kp R       &kp T      &kp LBKT        &kp RBKT     &kp Y       &kp U      &kp I        &kp O       &kp P     &kp EQUAL     &to 2
+                   &mo 1     &kp TAB       &kp Q       &kp W      &kp E       &kp R       &kp T      &kp LBKT        &kp RBKT     &kp Y       &kp U      &kp I        &kp O       &kp P     &kp EQUAL     &to 2
                  &kp CAPS    &kp ESC       &kp A       &kp S      &kp D       &kp F       &kp G                                   &kp H       &kp J      &kp K        &kp L      &kp SEMI   &kp APOS      &none
                              &kp LSHFT     &kp Z       &kp X      &kp C       &kp V       &kp B                                   &kp N       &kp M     &kp COMMA    &kp DOT     &kp FSLH   &kp RSHFT
                             &kp LWIN &kp KP_PLUS &kp KP_MINUS &mt LALT KP_ASTERISK &mt LCTRL BSLH &kp BSPC &kp DEL   &kp LALT    &kp RET   &lt 5 SPACE   &kp HOME    &kp PG_UP   &kp PG_DN   &kp END
@@ -87,7 +87,7 @@
             //             |___________|___________|___________|___________|___________|___________|___________||||___________|___________|___________|___________|___________|___________|___________|
             bindings = <
                                &kp Z       &kp N1      &kp N2     &kp N3      &kp N4      &kp N5      &none          &none        &kp N6      &kp N7     &kp N8       &kp N9      &kp N0      &none
-                  &none       &kp TAB      &kp Q       &kp W      &kp E       &kp R       &kp T       &kp V          &none        &none       &none       &none       &none       &none       &none       &none
+                  &none       &kp TAB      &kp Q       &kp W      &kp E       &kp R       &kp T       &kp V          &none        &none       &none       &none       &none       &none       &none       &to 7
                   &none       &kp ESC      &kp A       &kp S      &kp D       &kp F       &kp G                                   &none       &kp J       &none       &none       &none       &none       &to 3
                              &kp LSHFT     &kp Z       &kp X      &kp C       &none       &none                                   &none       &none       &none       &none       &none       &none
                              &kp LCTRL     &none       &none     &kp LALT     &kp C     &kp SPACE     &kp B          &kp M        &none       &none       &none       &none       &none       &none
@@ -127,6 +127,23 @@
                                &none       &none       &none      &none       &none       &none       &none          &none        &none       &none       &none       &none       &none       &none
             >;
             display-name = "JetBrains";
+        };
+
+        gaming_layer_7 {
+            //              -----------------------------------------------------------------------------------    -----------------------------------------------------------------------------------
+            //  -----------|     ~     |     1     |     2     |     3     |     4     |     5     |           ||||           |     6     |     7     |     8     |     9     |     0     |     -     |-----------
+            // |    LU     |    tab    |     q     |     w     |     e     |     r     |     t     |_____[_____||||_____]_____|     y     |     u     |     i     |     o     |     p     |     =     |    LU     |
+            // |____CAPS___|    esc    |     a     |     s     |     d     |     f     |     g     |           ||||           |     h     |     j     |     k     |     l     |     ;     |     '     |____LD_____|
+            //             |   shift   |     z     |     x     |     c     |     v     |     b     |-----------||||-----------|     n     |     m     |     ,     |     .     |     /     |   shift   |
+            //             |____win____|_____+_____|_____-_____|___*/alt___|___\/ctl___|____bsp____|____del____||||____alt____|____ent____|____spc____|____HOME___|_____PU____|_____PD____|____END____|
+            bindings = <
+                             &kp GRAVE     &kp N1      &kp N2     &kp N3      &kp N4      &kp N5      &none          &none        &kp N6      &kp N7     &kp N8       &kp N9      &kp N0    &kp MINUS
+                   &mo 1      &kp TAB      &kp Q       &kp W      &kp E       &kp R       &kp T      &kp LBKT        &kp RBKT     &kp Y       &kp U      &kp I        &kp O       &kp P     &kp EQUAL     &none
+                 &kp CAPS    &kp ESC       &kp A       &kp S      &kp D       &kp F       &kp G                                   &kp H       &kp J      &kp K        &kp L      &kp SEMI   &kp APOS      &to 4
+                             &kp LSHFT     &kp Z       &kp X      &kp C       &kp V       &kp B                                   &kp N       &kp M     &kp COMMA    &kp DOT     &kp FSLH   &kp RSHFT
+                            &kp LCTRL &kp KP_PLUS &kp KP_MINUS   &kp LALT  &kp SPACE     &kp BSPC     &kp DEL        &kp LALT    &kp RET   &lt 5 SPACE   &kp HOME    &kp PG_UP   &kp PG_DN   &kp END
+            >;
+            display-name = "Gaming";
         };
 
         trans_template {
