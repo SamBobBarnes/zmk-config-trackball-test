@@ -21,47 +21,6 @@
         margin: 0;
     }
 
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        gap: 10px;
-    }
-
-    .size-xs {
-        font-size: 11pt;
-    }
-
-    .size-sm {
-        font-size: 14pt;
-    }
-
-    .size-md {
-        font-size: 18pt;
-    }
-
-    .size-lg {
-        font-size: 22pt;
-    }
-
-    .size-xl {
-        font-size: 26pt;
-    }
-
-    .size-xxl {
-        font-size: 30pt;
-    }
-
-    .size-xxxl {
-        font-size: 34pt;
-    }
-
-    .size-xxxxl {
-        font-size: 38pt;
-    }
-
     .special-color {
         color: #ff0000;
         fill: #ff0000;
@@ -87,26 +46,16 @@
         fill: #9c00b1;
     }
 
-    .onshape-color {
-        color: #00b2ff;
-        fill: #00b2ff;
-    }
-
-    .main-color {
-        color: #000000;
-
-        h2 {
-            color: #ffffff;
-        }
-    }
-
-    .bottom-space {
-        /*margin-bottom: 10px;*/
+    .keypad {
+        color: #d90808;
+        fill: #d90808;
+        position: absolute;
+        font-size: .75rem;
     }
 
     .key {
         border: black solid 1px;
-        border-radius: .3rem;
+        /*border-radius: .3rem;*/
         font-size: 5mm;
         position: absolute;
     }
@@ -143,13 +92,13 @@
     }
 </style>
 <body>
-<div style="width: 210mm; height:80mm; border: black solid 2px; padding: 1rem; position: relative">
+<div style="width: 105mm; height:80mm; border: black solid 2px; padding: 1rem; position: relative">
     <!--    Left    -->
     <div class="key u1_25v" style="top: 24mm; left: 2mm">
-        <span class="main symbol-color">FN</span>
+        <span class="main symbol-color">Fn</span>
     </div>
     <div class="key u1_25v" style="top: 40mm; left: 2mm">
-        <span class="main special-color">CL</span>
+        <span class="main special-color">Cl</span>
     </div>
     <div class="key u1_25" style="top: 10mm; left: 15mm">
         <span class="main" style="top:1mm;left:2mm">` <span class="shift-color3">~</span></span>
@@ -271,6 +220,7 @@ M 3.83511,4.9236 L 3.98041,4.7236 L 4,4.59999 L 4,4.39999 L 3.9236,4.16487 L 3.7
     </div>
     <div class="key u1" style="top: 36mm; left: 83mm">
         <span class="main">G</span>
+        <span class="abs symbol-color" style="left:1mm; bottom:1mm; font-size:.75rem">&#128366;</span>
     </div>
     <div class="key u1" style="top: 49mm; left: 83mm">
         <span class="main">B</span>
@@ -288,8 +238,10 @@ M 3.83511,4.9236 L 3.98041,4.7236 L 4,4.59999 L 4,4.39999 L 3.9236,4.16487 L 3.7
     </div>
     <div class="key u1_5" style="top: 68mm;  left: 96mm">
         <span class="main" style="font-size: 10mm; left: 2.5mm; top: -1mm">&#9003;</span>
+        <span class="abs symbol-color" style="left:2mm; bottom:0;">&#128431;</span>
     </div>
-
+</div>
+<div style="width: 105mm; height:80mm; border: black solid 2px; padding: 1rem; position: relative">
     <!--    Right    -->
     <div class="key u1_25v" style="top: 24mm; right:2mm"><span class="main" style="font-size: 10mm; left:1.25mm">&#8648;</span></div>
     <div class="key u1_25v" style="top: 40mm; right:2mm"><span class="main" style="font-size: 10mm; left:1.25mm; top: .75mm">&#8650;</span></div>
@@ -325,15 +277,19 @@ M 3.83511,4.9236 L 3.98041,4.7236 L 4,4.59999 L 4,4.39999 L 3.9236,4.16487 L 3.7
         <span class="main" style="font-size: 10mm; left:2.5mm; top: -.75mm;">&#x21d3;</span>
     </div>
     <div class="key u1" style="top: 10mm; right: 31mm">
-        <span class="main">0 <span class="shift-color">)</span><br><span class="symbol-color">F10</span></span>
+        <span class="main">0<br><span class="symbol-color">F10</span></span>
+        <span class="shift-color abs" style="left:4mm; top:0mm; font-size: 1rem">)</span>
+        <span class="keypad" style="right:1mm;top:1mm;">-</span>
     </div>
     <div class="key u1" style="top: 23mm; right: 31mm">
         <span class="main">P</span>
+        <span class="keypad" style="right:1mm;top:1mm;">+</span>
     </div>
     <div class="key u1" style="top: 36mm; right: 31mm">
         <span class="main">; <span class="shift-color">:</span></span>
+        <span class="keypad" style="left:1mm;bottom:1mm;">&#9166;</span>
         <span class="abs space-color" style="right:1mm;bottom:-2mm">
-            <svg width="8mm" height="10mm" viewBox="-6 -5 12 10" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <svg width="6mm" height="10mm" viewBox="-6 -5 12 10" xmlns="http://www.w3.org/2000/svg" version="1.1">
             <title>OpenSCAD Model</title>
             <path d="
 M 1.87143,4.73566 L 4.27606,3.36159 L 4.27606,4.09999 L 4.35245,4.33511 L 4.55246,4.48041 L 4.67606,4.5
@@ -350,19 +306,24 @@ M 1.87143,4.73566 L 4.27606,3.36159 L 4.27606,4.09999 L 4.35245,4.33511 L 4.5524
     </div>
     <div class="key u1" style="top: 49mm; right: 31mm">
         <span class="main">/ <span class="shift-color">?</span></span>
+        <span class="keypad" style="left:1mm;bottom:1mm;">&#9166;</span>
     </div>
     <div class="key u1" style="top: 62mm; right: 31mm">
         <span class="main" style="font-size: 10mm; left:2.5mm; top: -.75mm;">&#x21d3;</span>
     </div>
     <div class="key u1" style="top: 8mm; right: 44mm">
-        <span class="main">9 <span class="shift-color">(</span><br><span class="symbol-color">F9</span></span>
+        <span class="main">9<br><span class="symbol-color">F9</span></span>
+        <span class="shift-color abs" style="left:4.5mm; top:0mm; font-size: 1rem">(</span>
+        <span class="keypad" style="right:1mm;top:1mm;">*</span>
     </div>
     <div class="key u1" style="top: 21mm; right: 44mm">
         <span class="main">O</span>
+        <span class="keypad" style="left:1mm;bottom:1mm;">9</span>
     </div>
     <div class="key u1" style="top: 34mm; right: 44mm">
         <span class="main">L</span>
-        <span class="abs space-color" style="left:1mm; bottom:-1mm;">
+        <span class="keypad" style="left:1mm;bottom:1mm;">6</span>
+        <span class="abs space-color" style="right:1mm; top:1mm;">
             <svg width="3mm" height="5mm" viewBox="-1 -3 4 6" xmlns="http://www.w3.org/2000/svg" version="1.1">
             <title>OpenSCAD Model</title>
             <path d="
@@ -379,12 +340,15 @@ M -0.0861359,2.86047 L 0.0795593,2.81818 L 0.232498,2.74162 L 0.365677,2.63431 L
     </div>
     <div class="key u1" style="top: 47mm; right: 44mm">
         <span class="main">. <span class="shift-color">&gt;</span></span>
+        <span class="keypad" style="left:1mm;bottom:1mm;">3</span>
     </div>
     <div class="key u1" style="top: 60mm; right: 44mm">
         <span class="main" style="font-size: 10mm; left:2.5mm; top: -.75mm;">&#x21d1;</span>
     </div>
     <div class="key u1" style="top: 6mm;  right: 57mm">
-        <span class="main">8 <span class="shift-color">*</span><br><span class="symbol-color">F8</span></span>
+        <span class="main">8<br><span class="symbol-color">F8</span></span>
+        <span class="shift-color abs" style="left:4.5mm; top:0mm; font-size: 1rem">*</span>
+        <span class="keypad" style="right:1mm;top:1mm;">/</span>
         <span class="abs space-color" style="right:-.5mm;bottom:-3mm; transform:rotate(-90deg) scaleX(.6)">
             <svg width="8mm" height="10mm" viewBox="-6 -5 12 10" xmlns="http://www.w3.org/2000/svg" version="1.1">
             <title>OpenSCAD Model</title>
@@ -403,7 +367,8 @@ M 1.87143,4.73566 L 4.27606,3.36159 L 4.27606,4.09999 L 4.35245,4.33511 L 4.5524
     </div>
     <div class="key u1" style="top: 19mm; right: 57mm">
         <span class="main">I</span>
-        <span class="abs space-color" style="left:2.5mm; bottom:-1mm; transform: rotate(-90deg)">
+        <span class="keypad" style="left:1mm;bottom:1mm;">8</span>
+        <span class="abs space-color" style="right:1mm; top:-1mm; transform: rotate(-90deg)">
             <svg width="3mm" height="5mm" viewBox="-1 -3 4 6" xmlns="http://www.w3.org/2000/svg" version="1.1">
             <title>OpenSCAD Model</title>
             <path d="
@@ -419,7 +384,8 @@ M -0.0861359,2.86047 L 0.0795593,2.81818 L 0.232498,2.74162 L 0.365677,2.63431 L
     </div>
     <div class="key u1" style="top: 32mm; right: 57mm">
         <span class="main">K</span>
-        <span class="abs space-color" style="left:1mm; bottom:-1mm; transform: rotate(90deg)">
+        <span class="keypad" style="left:1mm;bottom:1mm;">5</span>
+        <span class="abs space-color" style="right:2.5mm; top:0mm; transform: rotate(90deg)">
             <svg width="3mm" height="5mm" viewBox="-1 -3 4 6" xmlns="http://www.w3.org/2000/svg" version="1.1">
             <title>OpenSCAD Model</title>
             <path d="
@@ -435,6 +401,7 @@ M -0.0861359,2.86047 L 0.0795593,2.81818 L 0.232498,2.74162 L 0.365677,2.63431 L
     </div>
     <div class="key u1" style="top: 45mm; right: 57mm">
         <span class="main">, <span class="shift-color">&lt;</span></span>
+        <span class="keypad" style="left:1mm;bottom:1mm;">2</span>
         <span class="abs space-color" style="left:2mm;bottom:-2mm; transform:rotate(90deg) scaleX(.7)">
             <svg width="8mm" height="10mm" viewBox="-6 -5 12 10" xmlns="http://www.w3.org/2000/svg" version="1.1">
             <title>OpenSCAD Model</title>
@@ -459,10 +426,12 @@ M 1.87143,4.73566 L 4.27606,3.36159 L 4.27606,4.09999 L 4.35245,4.33511 L 4.5524
     </div>
     <div class="key u1" style="top: 21mm; right: 70mm">
         <span class="main">U</span>
+        <span class="keypad" style="left:1mm;bottom:1mm;">7</span>
     </div>
     <div class="key u1" style="top: 34mm; right: 70mm">
         <span class="main">J</span>
-        <span class="abs space-color" style="left:1mm; bottom:-1mm; transform: scaleX(-1)">
+        <span class="keypad" style="left:1mm;bottom:1mm;">4</span>
+        <span class="abs space-color" style="right:1mm; top:1mm; transform: scaleX(-1)">
             <svg width="3mm" height="5mm" viewBox="-1 -3 4 6" xmlns="http://www.w3.org/2000/svg" version="1.1">
             <title>OpenSCAD Model</title>
             <path d="
@@ -478,7 +447,8 @@ M -0.0861359,2.86047 L 0.0795593,2.81818 L 0.232498,2.74162 L 0.365677,2.63431 L
     </div>
     <div class="key u1" style="top: 47mm; right: 70mm">
         <span class="main">M</span>
-        <span class="abs jetbrains-color" style="left:1mm; bottom:0mm; font-size: .8rem">meth</span>
+        <span class="keypad" style="left:1mm;bottom:1mm;">1</span>
+        <span class="abs jetbrains-color" style="right:1mm; bottom:1mm; font-size: .75rem">&#119891;()</span>
     </div>
     <div class="key u1" style="top: 10mm;  right: 83mm">
         <span class="main">6 <span class="shift-color">^</span><br><span class="symbol-color">F6</span></span>
