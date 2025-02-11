@@ -19,7 +19,7 @@
             //             |____win____|_____+_____|_____-_____|___*/alt___|___\/ctl___|____bsp____|____del____||||____alt____|____ent____|____spc____|____HOME___|_____PU____|_____PD____|____END____|
             bindings = <
                              &kp GRAVE     &kp N1      &kp N2     &kp N3      &kp N4      &kp N5      &none          &none        &kp N6      &kp N7     &kp N8       &kp N9      &kp N0    &kp MINUS
-                   &mo 1     &kp TAB       &kp Q       &kp W      &kp E       &kp R       &kp T      &kp LBKT        &kp RBKT     &kp Y       &kp U      &kp I        &kp O       &kp P     &kp EQUAL     &to 2
+                   &mo 7     &kp TAB       &kp Q       &kp W      &kp E       &kp R       &kp T      &kp LBKT        &kp RBKT     &kp Y       &kp U      &kp I        &kp O       &kp P     &kp EQUAL     &to 1
                  &kp CAPS    &kp ESC       &kp A       &kp S      &kp D       &kp F       &kp G                                   &kp H       &kp J      &kp K        &kp L      &kp SEMI   &kp APOS      &none
                              &kp LSHFT     &kp Z       &kp X      &kp C       &kp V       &kp B                                   &kp N       &kp M     &kp COMMA    &kp DOT     &kp FSLH   &kp RSHFT
                             &kp LWIN &kp KP_PLUS &kp KP_MINUS &mt LALT KP_ASTERISK &mt LCTRL BSLH &kp BSPC &kp DEL   &kp LALT    &kp RET   &lt 5 SPACE   &kp HOME    &kp PG_UP   &kp PG_DN   &kp END
@@ -27,24 +27,7 @@
             display-name = "Default";
         };
 
-        function_1 {
-            //              -----------------------------------------------------------------------------------    -----------------------------------------------------------------------------------
-            //  -----------|           |    F1     |    F2     |    F3     |    F4     |    F5     |           ||||           |    F6     |    F7     |    F8     |    F9     |    F10    |    F11    |-----------
-            // |    LU     |           |           |           |           |           |           |___________||||___________|           |           |           |           |           |    F12    |    LU     |
-            // |____LD_____|           |           |           |           |           |           |           ||||           |           |           |           |           |           |           |____LD_____|
-            //             |           |           |           |           |           |           |-----------||||-----------|           |           |           |           |           |           |
-            //             |_BT-CYCLE__|___________|___________|___________|___________|___________|___________||||___________|___________|___________|___________|___________|___________|___________|
-            bindings = <
-                               &trans      &kp F1      &kp F2     &kp F3      &kp F4      &kp F4      &none          &none        &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp F11
-                   &none       &trans      &trans      &trans     &trans      &trans      &trans      &trans         &trans       &trans      &trans      &trans      &trans      &trans      &kp F12     &kp K_VOL_UP
-                   &none       &trans      &trans      &trans     &trans      &trans     &kp LC(H)                                &trans      &trans      &trans      &trans      &trans      &trans      &kp K_VOL_DN
-                               &trans      &trans      &trans     &trans      &trans      &trans                                  &trans      &trans      &trans      &trans      &trans      &trans
-                             &bt BT_NXT    &trans      &trans &bt BT_CLR_ALL  &kp K_CMENU &kp LA(LSHFT) &none          &trans       &trans     &kp K_APP    &trans      &trans      &trans      &trans
-            >;
-            display-name = "F-Row";
-        };
-
-        keypad_2 {
+        keypad_1 {
             //              -----------------------------------------------------------------------------------    -----------------------------------------------------------------------------------
             //  -----------|           |           |           |           |           |           |           ||||           |    PGU    |           |     /     |     *     |     -     |           |-----------
             // |   FROW    |    tab    |           |           |     ^     |           |           |___________||||___________|    PGD    |     7     |     8     |     9     |     +     |           |    LU     |
@@ -53,7 +36,7 @@
             //             |____win____|___________|___________|____alt____|____ctl____|____bsp____|____del____||||____alt____|____ent____|___ 0/SL___|_____0_____|_____._____|___________|___________|
             bindings = <
                                &none       &none       &none      &none       &none       &none       &none          &none      &kp PG_UP     &none  &kp KP_SLASH &kp KP_ASTERISK &kp KP_MINUS &none
-                   &mo 1     &kp TAB       &none       &none      &kp UP      &none       &none       &none          &none      &kp PG_DN   &kp KP_N7   &kp KP_N8    &kp KP_N9  &kp KP_PLUS   &none       &to 3
+                   &mo 1     &kp TAB       &none       &none      &kp UP      &none       &none       &none          &none      &kp PG_DN   &kp KP_N7   &kp KP_N8    &kp KP_N9  &kp KP_PLUS   &none       &to 2
                    &none     &kp ESC     &kp HOME     &kp LEFT   &kp DOWN    &kp RIGHT   &kp END                                 &kp HOME    &kp KP_N4   &kp KP_N5    &kp KP_N6    &kp RET     &none       &to 0
                              &kp LSHFT     &none       &none      &none       &none       &none                                  &kp END    &kp KP_N1   &kp KP_N2    &kp KP_N3    &kp RET     &none
                              &kp LWIN      &none       &none     &kp LALT   &kp LCTRL     &kp BSPC    &kp DEL        &kp LALT    &kp RET   &lt 5 KP_N0  &kp KP_N0    &kp KP_DOT    &none      &none
@@ -61,7 +44,7 @@
             display-name = "Keypad";
         };
 
-        onshape_layer_3 {
+        onshape_layer_2 {
             //              -----------------------------------------------------------------------------------    -----------------------------------------------------------------------------------
             //  -----------|           |           |           |           |           |           |           ||||           |           |           |     /     |     *     |     -     |           |-----------
             // |    LU     |    tab    |   Constr  |  Project  |  Extrude  |  Revolve  |   Trim    |___________||||___________|           |     7     |     8     |     9     |     +     |           |    LU     |
@@ -70,15 +53,15 @@
             //             |____win____|___________|___________|____alt____|____ctl____|____bsp____|____del____||||____alt____|____ent____|___ 0/SL___|_____0_____|_____._____|___________|___________|
             bindings = <
                                &none       &none       &none      &none       &none       &none       &none          &none        &none       &none       &trans      &trans      &trans      &none
-                  &none        &trans      &kp Q       &kp U     &kp LS(E)   &kp LS(W)    &kp M       &none          &none        &none       &trans      &trans      &trans      &trans      &none       &to 4
-                  &none        &trans      &kp A       &kp L      &kp D      &kp LS(F)    &kp G                                   &none       &trans      &trans      &trans      &trans      &none       &to 2
+                  &none        &trans      &kp Q       &kp U     &kp LS(E)   &kp LS(W)    &kp M       &none          &none        &none       &trans      &trans      &trans      &trans      &none       &to 3
+                  &none        &trans      &kp A       &kp L      &kp D      &kp LS(F)    &kp G                                   &none       &trans      &trans      &trans      &trans      &none       &to 1
                                &trans      &none       &none      &kp C       &none       &none                                   &none       &trans      &trans      &trans      &trans      &none
                                &trans      &none       &none      &trans      &trans      &trans      &trans         &trans       &trans      &trans      &trans      &trans      &none       &none
             >;
             display-name = "OnShape";
         };
 
-        warthunder_layer_4 {
+        warthunder_layer_3 {
             //              -----------------------------------------------------------------------------------    -----------------------------------------------------------------------------------
             //  -----------|           |           |           |           |           |           |           ||||           |           |           |           |           |           |           |-----------
             // |    LU     |           |           |           |           |           |           |___________||||___________|           |           |           |           |           |           |    LU     |
@@ -87,12 +70,29 @@
             //             |___________|___________|___________|___________|___________|___________|___________||||___________|___________|___________|___________|___________|___________|___________|
             bindings = <
                                &kp Z       &kp N1      &kp N2     &kp N3      &kp N4      &kp N5      &none          &none        &kp N6      &kp N7     &kp N8       &kp N9      &kp N0      &none
-                  &none       &kp TAB      &kp Q       &kp W      &kp E       &kp R       &kp T       &kp V          &none        &none       &none       &none       &none       &none       &none       &to 7
-                  &none       &kp ESC      &kp A       &kp S      &kp D       &kp F       &kp G                                   &none       &kp J       &none       &none       &none       &none       &to 3
+                  &none       &kp TAB      &kp Q       &kp W      &kp E       &kp R       &kp T       &kp V          &none        &none       &none       &none       &none       &none       &none       &to 4
+                  &none       &kp ESC      &kp A       &kp S      &kp D       &kp F       &kp G                                   &none       &kp J       &none       &none       &none       &none       &to 2
                              &kp LSHFT     &kp Z       &kp X      &kp C       &none       &none                                   &none       &none       &none       &none       &none       &none
                              &kp LCTRL     &none       &none     &kp LALT     &kp C     &kp SPACE     &kp B          &kp M        &none       &none       &none       &none       &none       &none
             >;
             display-name = "War Thunder";
+        };
+
+        gaming_layer_4 {
+            //              -----------------------------------------------------------------------------------    -----------------------------------------------------------------------------------
+            //  -----------|     ~     |     1     |     2     |     3     |     4     |     5     |           ||||           |     6     |     7     |     8     |     9     |     0     |     -     |-----------
+            // |    LU     |    tab    |     q     |     w     |     e     |     r     |     t     |_____[_____||||_____]_____|     y     |     u     |     i     |     o     |     p     |     =     |    LU     |
+            // |____CAPS___|    esc    |     a     |     s     |     d     |     f     |     g     |           ||||           |     h     |     j     |     k     |     l     |     ;     |     '     |____LD_____|
+            //             |   shift   |     z     |     x     |     c     |     v     |     b     |-----------||||-----------|     n     |     m     |     ,     |     .     |     /     |   shift   |
+            //             |____win____|_____+_____|_____-_____|___*/alt___|___\/ctl___|____bsp____|____del____||||____alt____|____ent____|____spc____|____HOME___|_____PU____|_____PD____|____END____|
+            bindings = <
+                             &kp GRAVE     &kp N1      &kp N2     &kp N3      &kp N4      &kp N5      &none          &none        &kp N6      &kp N7     &kp N8       &kp N9      &kp N0    &kp MINUS
+                   &mo 7      &kp TAB      &kp Q       &kp W      &kp E       &kp R       &kp T      &kp LBKT        &kp RBKT     &kp Y       &kp U      &kp I        &kp O       &kp P     &kp EQUAL     &none
+                 &kp CAPS    &kp ESC       &kp A       &kp S      &kp D       &kp F       &kp G                                   &kp H       &kp J      &kp K        &kp L      &kp SEMI   &kp APOS      &to 3
+                             &kp LSHFT     &kp Z       &kp X      &kp C       &kp V       &kp B                                   &kp N       &kp M     &kp COMMA    &kp DOT     &kp FSLH   &kp RSHFT
+                            &kp LCTRL &kp KP_PLUS &kp KP_MINUS   &kp LALT  &kp SPACE     &kp BSPC     &kp DEL        &kp LALT    &kp RET   &lt 5 SPACE   &kp HOME    &kp PG_UP   &kp PG_DN   &kp END
+            >;
+            display-name = "Gaming";
         };
 
         space_layer_5 {
@@ -129,21 +129,21 @@
             display-name = "JetBrains";
         };
 
-        gaming_layer_7 {
+        function_7 {
             //              -----------------------------------------------------------------------------------    -----------------------------------------------------------------------------------
-            //  -----------|     ~     |     1     |     2     |     3     |     4     |     5     |           ||||           |     6     |     7     |     8     |     9     |     0     |     -     |-----------
-            // |    LU     |    tab    |     q     |     w     |     e     |     r     |     t     |_____[_____||||_____]_____|     y     |     u     |     i     |     o     |     p     |     =     |    LU     |
-            // |____CAPS___|    esc    |     a     |     s     |     d     |     f     |     g     |           ||||           |     h     |     j     |     k     |     l     |     ;     |     '     |____LD_____|
-            //             |   shift   |     z     |     x     |     c     |     v     |     b     |-----------||||-----------|     n     |     m     |     ,     |     .     |     /     |   shift   |
-            //             |____win____|_____+_____|_____-_____|___*/alt___|___\/ctl___|____bsp____|____del____||||____alt____|____ent____|____spc____|____HOME___|_____PU____|_____PD____|____END____|
+            //  -----------|           |    F1     |    F2     |    F3     |    F4     |    F5     |           ||||           |    F6     |    F7     |    F8     |    F9     |    F10    |    F11    |-----------
+            // |    LU     |           |           |           |           |           |           |___________||||___________|           |           |           |           |           |    F12    |    LU     |
+            // |____LD_____|           |           |           |           |           |           |           ||||           |           |           |           |           |           |           |____LD_____|
+            //             |           |           |           |           |           |           |-----------||||-----------|           |           |           |           |           |           |
+            //             |_BT-CYCLE__|___________|___________|___________|___________|___________|___________||||___________|___________|___________|___________|___________|___________|___________|
             bindings = <
-                             &kp GRAVE     &kp N1      &kp N2     &kp N3      &kp N4      &kp N5      &none          &none        &kp N6      &kp N7     &kp N8       &kp N9      &kp N0    &kp MINUS
-                   &mo 1      &kp TAB      &kp Q       &kp W      &kp E       &kp R       &kp T      &kp LBKT        &kp RBKT     &kp Y       &kp U      &kp I        &kp O       &kp P     &kp EQUAL     &none
-                 &kp CAPS    &kp ESC       &kp A       &kp S      &kp D       &kp F       &kp G                                   &kp H       &kp J      &kp K        &kp L      &kp SEMI   &kp APOS      &to 4
-                             &kp LSHFT     &kp Z       &kp X      &kp C       &kp V       &kp B                                   &kp N       &kp M     &kp COMMA    &kp DOT     &kp FSLH   &kp RSHFT
-                            &kp LCTRL &kp KP_PLUS &kp KP_MINUS   &kp LALT  &kp SPACE     &kp BSPC     &kp DEL        &kp LALT    &kp RET   &lt 5 SPACE   &kp HOME    &kp PG_UP   &kp PG_DN   &kp END
+                               &trans      &kp F1      &kp F2     &kp F3      &kp F4      &kp F4      &none          &none        &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp F11
+                   &none       &trans      &trans      &trans     &trans      &trans      &trans      &trans         &trans       &trans      &trans      &trans      &trans      &trans      &kp F12     &kp K_VOL_UP
+                   &none       &trans      &trans      &trans     &trans      &trans     &kp LC(H)                                &trans      &trans      &trans      &trans      &trans      &trans      &kp K_VOL_DN
+                               &trans      &trans      &trans     &trans      &trans      &trans                                  &trans      &trans      &trans      &trans      &trans      &trans
+                             &bt BT_NXT    &trans      &trans &bt BT_CLR_ALL  &kp K_CMENU &kp LA(LSHFT) &none          &trans       &trans     &kp K_APP    &trans      &trans      &trans      &trans
             >;
-            display-name = "Gaming";
+            display-name = "F-Row";
         };
 
         trans_template {
