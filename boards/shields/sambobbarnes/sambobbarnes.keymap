@@ -98,15 +98,15 @@
         space_layer_5 {
             //              -----------------------------------------------------------------------------------    -----------------------------------------------------------------------------------
             //  -----------|  JB_RENM  |           |           |           |           |           |           ||||           |           |           |   PG UP   |           |           |   JB_L    |-----------
-            // |    LU     |           |           |           |           |           |           |___________||||___________|           |           |     ^     |           |           |   PSCR    |    LU     |
+            // |    LU     |           |           |           |           |           |           |___________||||___________|           |    JB<    |     ^     |    JB>    | Goto DECL |   PSCR    |    LU     |
             // |____LD_____|           |     {     |     (     |     )     |     }     |           |           ||||           |   HOME    |     <     |     v     |     >     |    END    |   CMENU   |____LD_____|
-            //             |   shift   |           |           |     [     |     ]     |           |-----------||||-----------|           |           |   PG DN   |           |           |   shift   |
+            //             |   shift   |           |           |     [     |     ]     |           |-----------||||-----------|           |           |   PG DN   |           | Goto  IMP |   shift   |
             //             |____win____|___________|___________|____alt____|____ctl____|___________|___________||||___________|___________|___________|___________|___________|___________|___________|
             bindings = <
                              &kp LS(F6)    &none       &none      &none       &none       &none       &none          &none        &none       &none     &kp PG_UP     &none       &none       &sl 6
-                  &none        &none       &none       &none      &none       &none       &none       &none          &none        &none       &none       &kp UP      &none       &none     &kp PSCRN     &none
+                  &none        &none       &none       &none      &none       &none       &none       &none          &none        &none    &kp LC(LEFT)   &kp UP  &kp LC(RIGHT) &kp LC(LS(B)) &kp PSCRN   &none
                   &none        &none     &kp LBRC     &kp LPAR   &kp RPAR    &kp RBRC     &none                                &kp HOME     &kp LEFT    &kp DOWN    &kp RIGHT   &kp END    &kp K_CMENU    &none
-                             &kp LSHFT     &none       &none     &kp LBKT    &kp RBKT     &none                                   &none       &none     &kp PG_DN     &none       &none     &kp RSHFT
+                             &kp LSHFT     &none       &none     &kp LBKT    &kp RBKT     &none                                   &none       &none     &kp PG_DN     &none     &kp LC(B)    &kp RSHFT
                              &kp LWIN      &none       &none     &kp LALT   &kp LCTRL     &none       &none          &none        &none       &none       &none       &none       &none       &none
             >;
             display-name = "Nav";
