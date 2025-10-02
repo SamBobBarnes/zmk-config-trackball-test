@@ -8,6 +8,15 @@
 #include <input/processors.dtsi>
 
 
+
+
+/ {
+  chosen {
+    zephyr,display = &oled;
+  };
+
+
+
   //left hand trackball
   split_inputs {
     #address-cells = <1>;

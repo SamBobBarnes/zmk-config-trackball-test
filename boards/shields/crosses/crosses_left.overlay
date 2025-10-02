@@ -3,17 +3,6 @@
 #include <input/processors/report_rate_limit.dtsi>
 //#include <behaviors/rate_limit.dtsi>
 
-&kscan0 {
-  col-gpios
-    = <&pro_micro 0 GPIO_ACTIVE_HIGH>
-    , <&pro_micro 18 GPIO_ACTIVE_HIGH>
-    , <&pro_micro 15 GPIO_ACTIVE_HIGH>
-    , <&pro_micro 10 GPIO_ACTIVE_HIGH>
-    , <&pro_micro 16 GPIO_ACTIVE_HIGH>
-    , <&pro_micro 14 GPIO_ACTIVE_HIGH>
-
-    ;
-};
 
 &spi1 {
   cs-gpios = <&gpio1 0 GPIO_ACTIVE_LOW>;
