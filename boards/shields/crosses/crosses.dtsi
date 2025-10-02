@@ -54,10 +54,7 @@
         , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
 
-    };
   };
-
-
 
   //left hand trackball
   split_inputs {
