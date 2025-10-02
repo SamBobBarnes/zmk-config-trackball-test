@@ -1,30 +1,6 @@
 #include "crosses.dtsi"
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <input/processors/report_rate_limit.dtsi>
-#include <behaviors/rate_limit.dtsi>
-
-&default_transform {
-  col-offset = <6>;
-};
-
-&forty_two_transform {
-  col-offset = <6>;
-};
-
-&thirty_six_transform {
-  col-offset = <6>;
-};
-
-&kscan0 {
-  col-gpios
-    = <&pro_micro 14 GPIO_ACTIVE_HIGH>
-    , <&pro_micro 16 GPIO_ACTIVE_HIGH>
-    , <&pro_micro 10 GPIO_ACTIVE_HIGH>
-    , <&pro_micro 15 GPIO_ACTIVE_HIGH>
-    , <&pro_micro 18 GPIO_ACTIVE_HIGH>
-    , <&pro_micro  0 GPIO_ACTIVE_HIGH>
-    ;
-};
 
 &trackball_peripheral_listener {
   status = "okay";
